@@ -1,5 +1,7 @@
-$primary-color: #222222;
+$primary-color: #222;
 $secondary-color: #3b73b4;
+$light-text-color: #e8e8e8;
+$dark-text-color: #181818;
 $show-home-image: true;
 $home-image: url(../img/bg_rysy.jpg);
 $portrait-image: url(../img/portrait.jpg);
@@ -31,6 +33,16 @@ $background-opacity: 0.9;
   }
 }
 
+// Setting text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40){
+    @return $dark-text-color
+  } @else {
+    @return $light-text-color
+  }
+}
+
+// Media queries
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
     @content;

@@ -1,8 +1,9 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #222222;
+$secondary-color: #3b73b4;
 $show-home-image: true;
 $home-image: url(../img/bg_rysy.jpg);
 $portrait-image: url(../img/portrait.jpg);
+$portrait-image-small: url(../img/portrait_small.jpg);
 $background-opacity: 0.9;
 
 @mixin easeOut {
@@ -27,5 +28,29 @@ $background-opacity: 0.9;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }

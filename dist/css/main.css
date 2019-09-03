@@ -14,7 +14,7 @@ header {
   z-index: 2;
   width: 250px;
   height: calc(100vh);
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.9);
   color: #e8e8e8;
   overflow: hidden;
   padding: 25px; }
@@ -28,7 +28,7 @@ header {
 main {
   z-index: 1;
   min-height: calc(100vh - 58px);
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.8);
   color: #e8e8e8;
   overflow: hidden;
   margin-left: 250px;
@@ -94,6 +94,7 @@ ul {
     header .link-list {
       margin-left: 250px; }
   main {
+    min-height: calc(100vh - 58px - 250px);
     margin-left: 0;
     padding: 0;
     align-items: center;

@@ -14,7 +14,30 @@
 
 // Tablet & Small laptop
 @include mediaMd {
+  header {
+    height: $header-size;
+    width: 100%;
+    position: static;
+
+    .portrait {
+      float: left;
+    }
+
+    //.links {
+    //  height: 100%;
+    //  margin-left: $header-size;
+    //  border: white 1px solid;
+    //  vertical-align: center;
+    //}
+
+    .link-list {
+      margin-left: $header-size;
+      //border: white 1px solid;
+    }
+  }
+
   main {
+    margin-left: 0px;
     align-items: center;
     text-align: center;
 

@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: url("../img/bg_rysy.jpg") fixed;
+  background-size: cover;
+  color: #e8e8e8;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 250px;
+  height: calc(100vh);
+  background: rgba(0, 0, 0, 0.9);
+  color: #e8e8e8;
+  overflow: hidden;
+  padding: 25px; }
+  header .portrait {
+    width: 200px;
+    border-radius: 50%;
+    border: #3b73b4 3px solid; }
+  header .link-item {
+    padding: 4px 0; }
+
+main {
+  z-index: 1;
+  min-height: calc(100vh - 58px);
+  background: rgba(0, 0, 0, 0.8);
+  color: #e8e8e8;
+  overflow: hidden;
+  margin-left: 250px;
+  padding: 1rem; }
+  main .container, main .box-container {
+    margin: 1rem auto;
+    overflow: hidden; }
+  main .container {
+    width: 95%; }
+  main .box-container {
+    width: 90%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #e8e8e8;
+    padding: 1rem 2rem;
+    border-left: #3b73b4 2px solid; }
+  main .text-secondary {
+    color: #3b73b4; }
+
+footer {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  min-height: 58px;
+  text-align: center;
+  padding: 1rem;
+  background: #000;
+  color: #3b73b4; }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 4.5rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5); }
+
+a {
+  color: #e8e8e8;
+  text-decoration: none; }
+  a:hover {
+    color: #3b73b4;
+    transition: all 0.5s ease-out; }
+
+ul {
+  padding: 0;
+  list-style: none; }
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 250px;
+    width: 100%;
+    position: static; }
+    header .portrait {
+      float: left; }
+    header .link-list {
+      margin-left: 250px; }
+  main {
+    min-height: calc(100vh - 58px - 250px);
+    margin-left: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; } }

@@ -6,7 +6,7 @@ $home-image: url('../img/bg_rysy.jpg');
 $portrait-image: url('../img/portrait.jpg');
 $portrait-image-small: url('../img/portrait_small.jpg');
 $header-size: 250px;
-$footer-height: 50px;
+$footer-height: 58px;
 $header-opacity: 0.95;
 $main-opacity: 0.85;
 $section-opacity: 0.5;
@@ -15,7 +15,7 @@ $section-opacity: 0.5;
   transition: all 0.5s ease-out;
 }
 
-// Setting text color
+// Setting text color depending on background
 @function get-text-color($color) {
   @if (lightness($color) > 40){
     @return $dark-text-color

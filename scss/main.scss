@@ -1,13 +1,11 @@
 @import 'config';
-@import 'menu';
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: $home-image;
-  background-attachment: fixed;
+  background: $home-image fixed;
   background-size: cover;
   color: get-text-color($primary-color);
   margin: 0;
@@ -16,80 +14,66 @@ body {
 }
 
 header {
-  width: $header-size;
-  height: calc(100vh - #{$footer-height});
   position: fixed;
-  padding: 25px;
+  z-index: 2;
+  width: $header-size;
+  height: calc(100vh);
   background: rgba($primary-color, $header-opacity);
   color: get-text-color(rgba($primary-color, $header-opacity));
+  overflow: hidden;
+  padding: 25px;
 
   .portrait {
     width: 200px;
-    //margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
   }
 
-  //.links {
-  //  border: white 1px solid;
-  //  .link {
-  //
-  //    padding: 1rem;
-  //  }
-  //}
-  .link-list {
-    padding: 0;
-    list-style: none;
-
-    .link-item {
-      padding: 4px 0;
-    }
+  .link-item {
+    padding: 4px 0;
   }
 }
 
 main {
-  padding: 2rem;
-  margin-left: $header-size;
-  height: calc(100vh - #{$footer-height});
+  z-index: 1;
+  min-height: calc(100vh - #{$footer-height});
   background: rgba($primary-color, $main-opacity);
   color: get-text-color(rgba($primary-color, $main-opacity));
-  overflow-x: hidden;
+  overflow: hidden;
+  margin-left: $header-size;
+  padding: 1rem;
 
-  .icons {
-    margin-top: 1rem;
-
-    a {
-      padding: 0.4rem;
-
-      &:hover {
-        color: $secondary-color;
-        @include easeOut();
-      }
-    }
-  }
-
-  &#home {
+  .container, .box-container {
+    margin: 1rem auto;
     overflow: hidden;
-    h1 {
-      margin-top: 20vh;
-    }
   }
-}
 
-section {
-  padding: 2rem;
-  margin: 1rem;
-  background: rgba($primary-color, $section-opacity);
-  color: get-text-color(rgba($primary-color, $section-opacity));
-  overflow-x: hidden;
+  .container {
+    width: 95%;
+  }
+
+  .box-container {
+    width: 90%;
+    background: rgba($primary-color, $section-opacity);
+    color: get-text-color(rgba($primary-color, $section-opacity));
+    padding:  1rem 2rem;
+    border-left: $secondary-color 2px solid;
+  }
+
+  .text-secondary {
+    color: $secondary-color;
+  }
 }
 
 footer {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  min-height: $footer-height;
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 5);
-  color: get-text-color($primary-color);
-  height: $footer-height;
+  background: $primary-color;
+  color: $secondary-color;
 }
 
 h1,
@@ -99,18 +83,17 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
 
   &.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
     background: rgba($primary-color, $section-opacity);
   }
 }
 
 a {
-  padding: 0.4rem;
   color: get-text-color($primary-color);
   text-decoration: none;
 
@@ -120,125 +103,9 @@ a {
   }
 }
 
-.text-secondary {
-  color: $secondary-color;
-}
-
-// About
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas:
-          'bioimage bio bio'
-          'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr);
-
-  .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-  }
-
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }
-
-  .job-1 {
-    grid-area: job1;
-  }
-
-  .job-2 {
-    grid-area: job2;
-  }
-
-  .job-3 {
-    grid-area: job3;
-  }
-
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
-  }
-}
-
-// Work
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
-
-  img {
-    width: 100%;
-    border: 3px get-text-color($primary-color) solid;
-
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
-  }
-}
-
-// Contact
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem;
-
-  div {
-    font-size: 2rem;
-    border: 3px get-text-color($primary-color) solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    @include easeOut;
-
-    &:hover {
-      padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: get-text-color($secondary-color);
-      span {
-        color: get-text-color($secondary-color);
-      }
-    }
-  }
-}
-
-// Buttons
-.btn {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
-  &:hover {
-    background: $secondary-color;
-    color: get-text-color($secondary-color);
-  }
-}
-
-.btn-dark {
-  @extend .btn;
-  background: darken($primary-color, 50);
-  color: $light-text-color;
-}
-
-.btn-light {
-  @extend .btn;
-  background: lighten($primary-color, 50);
-  color: $dark-text-color;
-}
-
-// Footer
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: darken($primary-color, 5);
-  color: get-text-color($primary-color);
-  height: 60px;
+ul {
+  padding: 0;
+  list-style: none;
 }
 
 @import 'mobile';

@@ -1,18 +1,12 @@
 // Wide screen
 @include mediaXl {
-  .projects {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 // Desktop & Laptop
 @include mediaLg {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
-// Tablet & Small laptop
+// Tablet
 @include mediaMd {
   header {
     height: $header-size;
@@ -23,21 +17,14 @@
       float: left;
     }
 
-    //.links {
-    //  height: 100%;
-    //  margin-left: $header-size;
-    //  border: white 1px solid;
-    //  vertical-align: center;
-    //}
-
     .link-list {
       margin-left: $header-size;
-      //border: white 1px solid;
     }
   }
 
   main {
-    margin-left: 0px;
+    margin-left: 0;
+    padding: 0;
     align-items: center;
     text-align: center;
 
@@ -46,59 +33,8 @@
       margin-bottom: 1rem;
     }
   }
-
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
-
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
-
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0);
-
-    .portrait {
-      background: $portrait-image-small;
-      width: 150px;
-      height: 150px;
-    }
-  }
-
-  .about-info {
-    grid-template-areas:
-            'bioimage'
-            'bio'
-            'job1'
-            'job2'
-            'job3';
-
-    grid-template-columns: 1fr;
-  }
-
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 // Smart-phone
 @include mediaSm {
-  //?
-  main#home h1 {
-    margin-top: 10vh;
-  }
-
-  .projects {
-    grid-template-columns: 1fr;
-  }
 }

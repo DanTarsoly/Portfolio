@@ -44,4 +44,9 @@
 
 // Smart-phone
 @include mediaSm {
+  main {
+    .lg-heading {
+      font-size: 3rem;
+    }
+  }
 }

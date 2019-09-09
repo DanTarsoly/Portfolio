@@ -69,6 +69,16 @@ main {
   .text-secondary {
     color: $secondary-color;
   }
+
+  .lg-heading {
+    font-size: 4.5rem;
+  }
+
+  .sm-heading {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba($primary-color, $section-opacity);
+  }
 }
 
 footer {
@@ -87,16 +97,6 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
-
-  &.lg-heading {
-    font-size: 4.5rem;
-  }
-
-  &.sm-heading {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background: rgba($primary-color, $section-opacity);
-  }
 }
 
 a {

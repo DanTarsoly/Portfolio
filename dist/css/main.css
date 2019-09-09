@@ -22,8 +22,12 @@ header {
     width: 200px;
     border-radius: 50%;
     border: #3b73b4 3px solid; }
-  header .link-item {
-    padding: 4px 0; }
+  header .link-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px; }
+  header a {
+    padding: 5px; }
 
 main {
   z-index: 1;
@@ -86,13 +90,19 @@ ul {
 
 @media screen and (max-width: 768px) {
   header {
-    height: 250px;
+    height: 170px;
     width: 100%;
-    position: static; }
+    position: static;
+    padding: 10px; }
     header .portrait {
+      width: 150px;
       float: left; }
-    header .link-list {
-      margin-left: 250px; }
+    header .link-container {
+      margin-left: 170px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
   main {
     min-height: calc(100vh - 58px - 250px);
     margin-left: 0;

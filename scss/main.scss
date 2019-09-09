@@ -24,13 +24,19 @@ header {
   padding: 25px;
 
   .portrait {
-    width: 200px;
+    width: $portrait-size;
     border-radius: 50%;
     border: $secondary-color 3px solid;
   }
 
-  .link-item {
-    padding: 4px 0;
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  a {
+    padding: 5px;
   }
 }
 

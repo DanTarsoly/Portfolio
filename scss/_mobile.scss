@@ -9,16 +9,22 @@
 // Tablet
 @include mediaMd {
   header {
-    height: $header-size;
+    height: $header-size-small;
     width: 100%;
     position: static;
+    padding: 10px;
 
     .portrait {
+      width: $portrait-size-small;
       float: left;
     }
 
-    .link-list {
-      margin-left: $header-size;
+    .link-container {
+      margin-left: $header-size-small;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
     }
   }
 

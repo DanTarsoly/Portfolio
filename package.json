@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Daniel Tarsoly portfolio",
   "main": "index.js",
-  "homepage": "https://dantarsoly.github.io/dist",
+  "homepage": "https://dantarsoly.github.io",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o css/ --recursive",
+    "deploy": "gh-pages"
   },
   "author": "Daniel Tarsoly",
   "license": "ISC",

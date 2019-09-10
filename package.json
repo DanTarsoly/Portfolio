@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive portfolio",
   "main": "index.js",
-  "homepage": "https://dantarsoly.github.io",
+  "homepage": "https://dantarsoly.github.io/dantarsoly.github.io",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"

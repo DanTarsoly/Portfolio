@@ -1,0 +1,52 @@
+// Wide screen
+@include mediaXl {
+}
+
+// Desktop & Laptop
+@include mediaLg {
+}
+
+// Tablet
+@include mediaMd {
+  header {
+    height: $header-size-small;
+    width: 100%;
+    position: static;
+    padding: 10px;
+
+    .portrait {
+      width: $portrait-size-small;
+      float: left;
+    }
+
+    .link-container {
+      margin-left: $header-size-small;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+  main {
+    min-height: calc(100vh - #{$footer-height} - #{$header-size});
+    margin-left: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Smart-phone
+@include mediaSm {
+  main {
+    .lg-heading {
+      font-size: 3rem;
+    }
+  }
+}

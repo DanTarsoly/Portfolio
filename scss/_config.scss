@@ -1,0 +1,52 @@
+$primary-color: #000;
+$secondary-color: #3b73b4;
+$light-text-color: #e8e8e8;
+$dark-text-color: #080808;
+$home-image: url('../img/bg_rysy.jpg');
+$portrait-image: url('../img/portrait.jpg');
+$portrait-size: 200px;
+$portrait-size-small: 150px;
+$header-size: 250px;
+$header-size-small: 170px;
+$footer-height: 58px;
+$header-opacity: 0.90;
+$main-opacity: 0.80;
+$section-opacity: 0.5;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+// Setting text color depending on background
+@function get-text-color($color) {
+  @if (lightness($color) > 40){
+    @return $dark-text-color
+  } @else {
+    @return $light-text-color
+  }
+}
+
+// Media queries
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

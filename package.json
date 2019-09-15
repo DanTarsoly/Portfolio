@@ -6,7 +6,7 @@
   "homepage": "https://dantarsoly.github.io",
   "scripts": {
     "sass": "node-sass -w scss/ -o css/ --recursive",
-    "deploy": "gh-pages"
+    "deploy": "gh-pages -d ."
   },
   "author": "Daniel Tarsoly",
   "license": "ISC",

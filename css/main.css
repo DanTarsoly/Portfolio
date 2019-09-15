@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background: url("../img/bg_rysy.jpg") fixed;
+  background: url("../assets/background.jpg") fixed;
   background-size: cover;
   color: #e8e8e8;
   margin: 0;

@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d ."
   },
   "author": "Daniel Tarsoly",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "node-sass": "^4.12.0"
   },

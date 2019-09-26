@@ -80,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="718" />
     <option name="width" value="889" />
     <option name="height" value="867" />
@@ -121,7 +121,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TheProjectApi" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -173,12 +173,12 @@
       <workItem from="1568741164449" duration="293000" />
       <workItem from="1569314065358" duration="531000" />
       <workItem from="1569335583688" duration="2745000" />
-      <workItem from="1569430480447" duration="83000" />
+      <workItem from="1569430480447" duration="126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86539000" />
+    <option name="totallyTimeSpent" value="86582000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -191,12 +191,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="718" y="0" width="889" height="867" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16098708" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16098708" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32833788" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32833788" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32833788" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />

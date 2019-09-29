@@ -1,5 +1,10 @@
 // Wide screen
 @include mediaXl {
+  main {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 // Desktop & Laptop
@@ -39,6 +44,10 @@
     align-items: center;
     text-align: center;
 
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
@@ -51,6 +60,10 @@
   main {
     .lg-heading {
       font-size: 3rem;
+    }
+
+    .grid-container {
+      grid-template-columns: 1fr;
     }
   }
 }

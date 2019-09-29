@@ -66,6 +66,12 @@ main {
     border-left: $secondary-color 2px solid;
   }
 
+  .grid-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .text-secondary {
     color: $secondary-color;
   }

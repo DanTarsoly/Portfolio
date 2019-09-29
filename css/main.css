@@ -48,6 +48,10 @@ main {
     color: #e8e8e8;
     padding: 1rem 2rem;
     border-left: #3b73b4 2px solid; }
+  main .grid-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr); }
   main .text-secondary {
     color: #3b73b4; }
   main .lg-heading {
@@ -84,6 +88,10 @@ ul {
   padding: 0;
   list-style: none; }
 
+@media screen and (min-width: 1171px) {
+  main .grid-container {
+    grid-template-columns: repeat(3, 1fr); } }
+
 @media screen and (max-width: 768px) {
   header {
     height: 170px;
@@ -107,10 +115,14 @@ ul {
     padding: 0;
     align-items: center;
     text-align: center; }
+    main .grid-container {
+      grid-template-columns: repeat(2, 1fr); }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; } }
 
 @media screen and (max-width: 500px) {
   main .lg-heading {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  main .grid-container {
+    grid-template-columns: 1fr; } }

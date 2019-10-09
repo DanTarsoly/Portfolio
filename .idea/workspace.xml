@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a52c2ab8-1419-487f-b0b0-c680071120b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="a52c2ab8-1419-487f-b0b0-c680071120b7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -85,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="450" />
     <option name="width" value="1151" />
     <option name="height" value="867" />
@@ -187,12 +184,12 @@
       <workItem from="1569456460416" duration="4211000" />
       <workItem from="1569784869882" duration="5287000" />
       <workItem from="1569794177934" duration="376000" />
-      <workItem from="1569798190349" duration="110000" />
+      <workItem from="1569798190349" duration="260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96566000" />
+    <option name="totallyTimeSpent" value="96716000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -204,8 +201,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="450" y="0" width="1151" height="867" extended-state="0" />
-    <editor active="true" />
+    <frame x="450" y="0" width="1151" height="867" extended-state="1" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.123090744" />

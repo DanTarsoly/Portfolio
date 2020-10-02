@@ -1,13 +1,19 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+  border: 0; }
 
 body {
-  background: url("../assets/background.jpg") fixed;
+  background: url("../content/background.jpg") fixed;
   background-size: cover;
   color: #e8e8e8;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 header {
   position: fixed;
@@ -37,6 +43,15 @@ main {
   overflow: hidden;
   margin-left: 250px;
   padding: 1rem; }
+  main .flag-container {
+    text-align: right;
+    line-height: 0; }
+    main .flag-container .flag-btn {
+      line-height: 0;
+      padding: 1px; }
+      main .flag-container .flag-btn .flag-img {
+        width: 30px;
+        border-radius: 50%; }
   main .container, main .box-container {
     margin: 1rem auto;
     overflow: hidden; }
@@ -74,15 +89,29 @@ footer {
 h1,
 h2,
 h3 {
-  margin: 0;
   font-weight: 400; }
 
 a {
   color: #e8e8e8;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
   a:hover {
     color: #3b73b4;
-    transition: all 0.5s ease-out; }
+    transition: all 0.2s ease-out; }
+  a:focus {
+    color: #3b73b4;
+    transition: all 0.2s ease-out; }
+
+button {
+  background: #e8e8e8;
+  border-radius: 50%;
+  outline: none; }
+  button:hover {
+    background-color: #3b73b4;
+    transition: all 0.2s ease-out; }
+  button:focus {
+    transition: all 0.2s ease-out;
+    background-color: #3b73b4; }
 
 ul {
   padding: 0;

@@ -2,6 +2,10 @@
 
 * {
   box-sizing: border-box;
+  background: rgba(0,0,0,0);
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
@@ -50,6 +54,21 @@ main {
   overflow: hidden;
   margin-left: $header-size;
   padding: 1rem;
+
+  .flag-container {
+    text-align: right;
+    line-height: 0;
+
+    .flag-btn {
+      line-height: 0;
+      padding: 1px;
+
+      .flag-img {
+        width: $flag-size;
+        border-radius: 50%;
+      }
+    }
+  }
 
   .container, .box-container {
     margin: 1rem auto;
@@ -103,17 +122,38 @@ footer {
 h1,
 h2,
 h3 {
-  margin: 0;
   font-weight: 400;
 }
 
 a {
   color: get-text-color($primary-color);
-  text-decoration: none;
+  text-decoration: none;  
+  outline:none;
 
   &:hover {
     color: $secondary-color;
     @include easeOut();
+  }
+
+  &:focus {
+    color: $secondary-color;
+    @include easeOut();
+  }
+}
+
+button {
+  background: get-text-color($primary-color);
+  border-radius: 50%;
+  outline:none;
+
+  &:hover {
+    background-color: $secondary-color;
+    @include easeOut();
+  }
+
+  &:focus {
+    @include easeOut();
+    background-color: $secondary-color;
   }
 }
 

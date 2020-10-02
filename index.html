@@ -9,7 +9,7 @@
     <meta name="keywords" content="Daniel Tarsoly, DanTarsoly, Portfolio, Software Development, Web Development">
 
     <script src="https://kit.fontawesome.com/020e0fcac5.js"></script>
-
+    
     <link rel="stylesheet" href="css/main.css">
 
     <title>Daniel Tarsoly</title>
@@ -17,7 +17,7 @@
 
 <body id="index">
     <header>
-        <img class="portrait" src="assets/portrait.jpg" alt="Daniel Tarsoly">
+        <img class="portrait" src="content/portrait.jpg" alt="Daniel Tarsoly">
         <div class="link-container">
             <a href="https://www.linkedin.com/in/dantarsoly/" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-linkedin fa-2x"></i> LinkedIn
@@ -28,7 +28,7 @@
             <a href="mailto:dan.tarsoly@gmail.com" target="_blank">
                 <i class="fas fa-at fa-2x"></i> Email
             </a>
-            <a href="./assets/cv.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="./CV_EN.pdf" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-file-alt fa-2x"></i> Resume
             </a>
         </div>
@@ -36,7 +36,13 @@
 
     <main>
         <section id="main" class="container">
-            <h1 class="lg-heading">Daniel <span class="text-secondary">Tarsoly</span></h1>
+            <div class=flag-container>
+                <button id="lang-btn" class=flag-btn type="button">
+                    <img id="lang-img" class="flag-img" src="content/uk-flag.png">
+                </button>
+            </div>
+            <h1 class="lg-heading" lang="en">Daniel <span class="text-secondary">Tarsoly</span></h1>
+            <h1 class="lg-heading" lang="hu">Tarsoly <span class="text-secondary">Dániel</span></h1>
             <h2 class="sm-heading">Software & Web Developer</h2>
         </section>
 
@@ -100,7 +106,14 @@
     </main>
 
     <footer>
-        Daniel Tarsoly, Copyright &copy; 2019
+        <div lang="en">
+            Daniel Tarsoly &copy; 2020
+        </div>
+        <div lang="hu">
+            Tarsoly Dániel &copy; 2020
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

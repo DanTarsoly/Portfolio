@@ -27,7 +27,7 @@ header {
   background: rgba($primary-color, $header-opacity);
   color: get-text-color(rgba($primary-color, $header-opacity));
   overflow: hidden;
-  padding: 25px;
+  padding: ($header-size - $portrait-size) / 2;
 
   .portrait {
     width: $portrait-size;
@@ -41,8 +41,7 @@ header {
     flex-direction: column;
 
     a {
-      margin: 5px 0;
-
+      margin: 1px 0;
       i {
         margin-left: 5px;
         font-style: normal;

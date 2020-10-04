@@ -72,7 +72,7 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr); }
-  main .text-secondary {
+  main .colored {
     color: #3b73b4; }
   main .lg-heading {
     font-size: 4.5rem; }

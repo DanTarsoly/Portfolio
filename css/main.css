@@ -31,7 +31,9 @@ header {
     border-radius: 50%; }
   header .link-container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap; }
     header .link-container a {
       margin: 1px 0; }
       header .link-container a svg {
@@ -50,13 +52,11 @@ main {
   overflow: hidden;
   margin-left: 240px;
   padding: 1rem; }
-  main .flag-container {
-    text-align: right;
-    line-height: 0; }
-    main .flag-container .flag-btn {
-      line-height: 0;
-      border-radius: 50%;
-      padding: 1px; }
+  main .flag-btn {
+    float: right;
+    line-height: 0;
+    border-radius: 50%;
+    padding: 1px; }
   main .container, main .box-container {
     margin: 1rem auto;
     overflow: hidden; }
@@ -75,7 +75,9 @@ main {
   main .colored {
     color: #3b73b4; }
   main .lg-heading {
-    font-size: 4.5rem; }
+    font-size: 4.5rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem; }
   main .sm-heading {
     margin-bottom: 1rem;
     padding: 1rem;

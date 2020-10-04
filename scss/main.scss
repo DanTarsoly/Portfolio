@@ -39,6 +39,8 @@ header {
   .link-container {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
 
     a {
       margin: 1px 0;
@@ -66,15 +68,11 @@ main {
   margin-left: $header-size;
   padding: 1rem;
 
-  .flag-container {
-    text-align: right;
+  .flag-btn {
+    float: right;
     line-height: 0;
-
-    .flag-btn {
-      line-height: 0;
-      border-radius: 50%;
-      padding: 1px;
-    }
+    border-radius: 50%;
+    padding: 1px;
   }
 
   .container, .box-container {
@@ -106,6 +104,8 @@ main {
 
   .lg-heading {
     font-size: 4.5rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .sm-heading {

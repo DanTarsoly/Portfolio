@@ -42,13 +42,16 @@ header {
 
     a {
       margin: 1px 0;
+
+      svg {
+        width: $icon-size;
+        height: $icon-size;
+        fill: get-text-color(rgba($primary-color, $header-opacity));
+      }
+
       i {
         margin-left: 5px;
         font-style: normal;
-      }
-
-      .icon {
-        width: 30px;
       }
     }
   }
@@ -70,11 +73,7 @@ main {
     .flag-btn {
       line-height: 0;
       border-radius: 50%;
-      padding: 2px;
-
-      .flag-img {
-        width: $flag-size;
-      }
+      padding: 1px;
     }
   }
 
@@ -141,11 +140,21 @@ a {
 
   &:hover {
     color: $secondary-color;
+    
+    path {
+      fill: $secondary-color;
+      @include easeOut();
+    };
     @include easeOut();
   }
 
   &:focus {
     color: $secondary-color;
+
+    path {
+      fill: $secondary-color;
+      @include easeOut();
+    };
     @include easeOut();
   }
 }

@@ -2,9 +2,11 @@ const buttons = document.getElementsByTagName('button');
 const links = document.getElementsByTagName('a');
 
 for (let button of buttons) {
+    button.addEventListener('click', () => document.activeElement.blur());
     button.addEventListener('touchend', () => document.activeElement.blur());
 }
 for (let link of links) {
+    link.addEventListener('click', () => document.activeElement.blur());
     link.addEventListener('touchend', () => document.activeElement.blur());
 }
 

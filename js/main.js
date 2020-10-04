@@ -1,3 +1,6 @@
+const ukFlagIcon = '../content/icons/uk_flag.png';
+const huFlagIcon = '../content/icons/hu_flag.png';
+
 const buttons = document.getElementsByTagName('button');
 const links = document.getElementsByTagName('a');
 const langBtn = document.getElementById('lang-btn');
@@ -13,18 +16,18 @@ for (let link of links) {
 let locale = navigator.language.substr(0,2);
 
 let language = locale == 'hu' ? 'hu' : 'en';
-langImg.src = language == 'hu' ? '../content/uk-flag.png' : '../content/hu-flag.png'
+langImg.src = language == 'hu' ? ukFlagIcon : huFlagIcon;
 setLanguage(language);
 
 langBtn.onclick = () => {
     switch(language) {
         case 'en':
-            langImg.src = '../content/uk-flag.png'
-            language = 'hu'
+            langImg.src = ukFlagIcon;
+            language = 'hu';
             break;
         case 'hu':
-            langImg.src = '../content/hu-flag.png'
-            language = 'en'
+            langImg.src = huFlagIcon;
+            language = 'en';
             break;
     }
     setLanguage(language);

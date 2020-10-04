@@ -6,7 +6,7 @@
   border: 0; }
 
 body {
-  background: url("../content/background.jpg") fixed;
+  background: url("../content/images/background.jpg") fixed;
   background-size: cover;
   color: #e8e8e8;
   margin: 0;
@@ -26,18 +26,23 @@ header {
   padding: 25px; }
   header .portrait {
     width: 200px;
-    border-radius: 50%;
-    border: #3b73b4 3px solid; }
+    background: #3b73b4;
+    padding: 3px;
+    border-radius: 50%; }
   header .link-container {
     display: flex;
-    flex-direction: column;
-    padding: 10px 0 10px 0; }
-  header a {
-    padding: 5px; }
+    flex-direction: column; }
+    header .link-container a {
+      margin: 5px 0; }
+      header .link-container a i {
+        margin-left: 5px;
+        font-style: normal; }
+      header .link-container a .icon {
+        width: 30px; }
 
 main {
   z-index: 1;
-  min-height: calc(100vh - 58px);
+  min-height: calc(100vh - 40px);
   background: rgba(0, 0, 0, 0.8);
   color: #e8e8e8;
   overflow: hidden;
@@ -48,10 +53,10 @@ main {
     line-height: 0; }
     main .flag-container .flag-btn {
       line-height: 0;
-      padding: 1px; }
+      border-radius: 50%;
+      padding: 2px; }
       main .flag-container .flag-btn .flag-img {
-        width: 30px;
-        border-radius: 50%; }
+        width: 30px; }
   main .container, main .box-container {
     margin: 1rem auto;
     overflow: hidden; }
@@ -80,11 +85,12 @@ footer {
   position: relative;
   z-index: 3;
   width: 100%;
-  min-height: 58px;
+  min-height: 40px;
   text-align: center;
   padding: 1rem;
   background: #000;
-  color: #3b73b4; }
+  color: #3b73b4;
+  line-height: 1; }
 
 h1,
 h2,
@@ -104,7 +110,6 @@ a {
 
 button {
   background: #e8e8e8;
-  border-radius: 50%;
   outline: none; }
   button:hover {
     background-color: #3b73b4;
@@ -114,7 +119,6 @@ button {
     background-color: #3b73b4; }
 
 ul {
-  padding: 0;
   list-style: none; }
 
 @media screen and (min-width: 1171px) {
@@ -136,10 +140,10 @@ ul {
       display: flex;
       flex-direction: column;
       justify-content: space-around; }
-    header a {
-      padding: 2px; }
+      header .link-container a .icon {
+        width: 25px; }
   main {
-    min-height: calc(100vh - 58px - 250px);
+    min-height: calc(100vh - 40px - 250px);
     margin-left: 0;
     padding: 0;
     align-items: center;

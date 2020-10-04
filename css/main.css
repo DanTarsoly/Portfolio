@@ -14,6 +14,13 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+  body .flag-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    line-height: 0;
+    border-radius: 50%;
+    padding: 1px; }
 
 header {
   position: fixed;
@@ -52,11 +59,6 @@ main {
   overflow: hidden;
   margin-left: 240px;
   padding: 1rem; }
-  main .flag-btn {
-    float: right;
-    line-height: 0;
-    border-radius: 50%;
-    padding: 1px; }
   main .container, main .box-container {
     margin: 1rem auto;
     overflow: hidden; }
@@ -76,7 +78,6 @@ main {
     color: #3b73b4; }
   main .lg-heading {
     font-size: 4.5rem;
-    padding-top: 1rem;
     margin-bottom: 1rem; }
   main .sm-heading {
     margin-bottom: 1rem;

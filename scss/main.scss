@@ -18,6 +18,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  .colored{
+    color: $secondary-color;
+  }
+
   .flag-btn {
     position: absolute;
     top: 10px;
@@ -58,13 +62,7 @@ header {
       svg {
         width: $icon-size;
         height: $icon-size;
-        fill: get-text-color(rgba($primary-color, $header-opacity));
         margin-right: 5px;
-      }
-
-      i {
-        // margin-left: 5px;
-        font-style: normal;
       }
     }
   }
@@ -102,10 +100,6 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .colored{
-    color: $secondary-color;
-  }
-
   .lg-heading {
     font-size: 4.5rem;
     margin-bottom: 1rem;
@@ -134,21 +128,30 @@ h1,
 h2,
 h3 {
   font-weight: 400;
+  line-height: 2;
 }
 
 a {
-  color: get-text-color($primary-color);
+  color: white;
+  fill: white;
   text-decoration: none;  
   outline:none;
 
   &:hover {
-    color: $secondary-color;
+    .colorize {
+      color: $secondary-color;
+      @include easeOut();
+    }
+
+    .capitalize {
+      text-transform: uppercase;
+      @include easeOut();
+    }
     
     path {
       fill: $secondary-color;
       @include easeOut();
     };
-    @include easeOut();
   }
 
   &:focus {

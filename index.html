@@ -19,28 +19,29 @@
     <button id="lang-btn" class=flag-btn type="button" language="hu">
         <img id="flag-img" src="content/icons/hu_flag.png">
     </button>
-    <!-- <button id="en-btn" class=flag-btn type="button" lang="hu" hidden>
-        <img src="content/icons/uk_flag.png">
-    </button> -->
 
     <header>
         <img class="portrait" src="content/images/portrait.jpg" alt="Daniel Tarsoly">
         <div class="link-container">
             <a href="mailto:dan.tarsoly@gmail.com" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M22,4H2V20H22ZM20,8l-8,5L4,8V6l8,5,8-5Z" transform="translate(-2 0)"/></svg>
-                <i>Email</i>
+                E<span class="colorize capitalize">m</span>ail
             </a>
             <a href="https://www.linkedin.com/in/dantarsoly/" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M0,0V20H20V0ZM6.221,16.615H3.253V7.688H6.221ZM4.737,6.47h-.02a1.547,1.547,0,1,1,.039-3.085A1.547,1.547,0,1,1,4.737,6.47ZM16.923,16.615H13.955V11.839c0-1.2-.429-2.018-1.5-2.018a1.623,1.623,0,0,0-1.523,1.085,2.034,2.034,0,0,0-.1.723v4.986H7.862s.04-8.09,0-8.927h2.969V8.953a2.948,2.948,0,0,1,2.675-1.475c1.953,0,3.417,1.276,3.417,4.017Z"/></svg>
-                <i>LinkedIn</i>
+                Linked<span class="colorize capitalize">i</span>n
             </a>
             <a  href="https://github.com/dantarsoly" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M10,0A10.126,10.126,0,0,0,0,10.253,10.226,10.226,0,0,0,6.837,19.98c.5.09.688-.218.688-.487,0-.244-.012-1.051-.012-1.91-2.513.474-3.163-.628-3.363-1.2a3.727,3.727,0,0,0-1.025-1.448c-.35-.192-.85-.666-.012-.679A2,2,0,0,1,4.65,15.3a2.108,2.108,0,0,0,2.912.846A2.177,2.177,0,0,1,8.2,14.777c-2.225-.256-4.55-1.141-4.55-5.062A4.047,4.047,0,0,1,4.675,6.959a3.771,3.771,0,0,1,.1-2.717s.838-.269,2.75,1.051a9.2,9.2,0,0,1,5,0c1.912-1.333,2.75-1.051,2.75-1.051a3.771,3.771,0,0,1,.1,2.717A4.023,4.023,0,0,1,16.4,9.715c0,3.935-2.337,4.806-4.562,5.062a2.461,2.461,0,0,1,.675,1.9c0,1.371-.013,2.474-.013,2.82,0,.269.188.59.688.487A10.252,10.252,0,0,0,20,10.253,10.126,10.126,0,0,0,10,0Z"/></svg>
-                <i>GitHub</i>
+                Git<span class="colorize capitalize">h</span>ub
             </a>
-            <a href="./CV_EN.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="./CV_EN.pdf" target="_blank" rel="noopener noreferrer" lang="en">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M14,2H4V22H20V8Zm2,16H8V16h8Zm0-4H8V12h8ZM13,9V3.5L18.5,9Z" transform="translate(-2 -2)"/></svg>
-                <i>Resume</i>
+                Resu<span class="colorize capitalize">m</span>e
+            </a>
+            <a href="./CV_HU.pdf" target="_blank" rel="noopener noreferrer" lang="hu" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M14,2H4V22H20V8Zm2,16H8V16h8Zm0-4H8V12h8ZM13,9V3.5L18.5,9Z" transform="translate(-2 -2)"/></svg>
+                Ön<span class="colorize capitalize">é</span>letrajz
             </a>
         </div>
     </header>
@@ -57,60 +58,132 @@
             </div>
         </section>
 
-        <section id="bio" class="box-container">
-            <h3 class="text-secondary">BIO</h3>
-            <p>I am Daniel Tarsoly, a dedicated programmer with a Bachelor's Degree in Software Development, currently living in Aarhus, Denmark.</p>
-            <p>My main interests are cross-platform and web development but I am working hard to continuously broaden my perspectives and learn new technologies.</p>
-            <p>In my free time I am an outdoors and sport enthusiast with rock/sport climbing and mountaineering being my favorite activities.</p>
+        <section id="about" class="box-container">
+            <div lang="en">
+                <h3 class="text-secondary">About</h3>
+                <p>I am Daniel Tarsoly, a dedicated programmer with a Bachelor's Degree in Software Development. Currently I am living in Veszprém, Hungary.</p>
+                <p>My main interests are application, mobile and web development. I put a big emphasis on system planning and like to get involved in the entire stack. I am working hard to continuously broaden my perspectives and learn new technologies.</p>
+                <p>In my free time I am a passioned outdoorsman and a sport enthusiast. Rock climbing and mountaineering are my favorite hobbies.</p>
+            </div>
+            <div lang="hu" hidden>
+                <h3 class="text-secondary">Rólam</h3>
+                <p>Tarsoly Dániel vagyok, egy elhivatott programozó Szoftverfejlesztő alaplépzéssel. Jelenleg Magyarországon élek, Veszprémben.</p>
+                <p>Legfőbb érdeklődési köreim az alkalmazás, mobil és web fejlesztés. Nagy hangsúlyt fektetek a rendszer tervezésre és szeretek minden réteghez hozzáadni. Keményen dolgozom rajta hogy folyamatoan szélesítsem a látóköröm és új technológiákat tanuljak.</p>
+                <p>Civilben lelkes természetjáró és sport rajongó vagyok. A szikla- és hegymászás a kedvenc hobbijaim.</p>
+            </div>
         </section>
 
         <section id="education" class="box-container">
-            <h3 class="text-secondary">Education</h3>
-            <h4>Bachelor's Degree in Software Development from Erhvervsakademi Aarhus, 2019</h4>
-            <p>Courses included: • Databases for Developers • Machine Learning and Optimization • Large systems • System Integration • Test Driven Development • Android Development.</p>
-            <h4>Academy Profession Degree in Computer Science from Erhvervsakademi Sydvest, 2018</h4>
-            <p>Courses included: • IT at Organisations • System Construction • System Development • Databases • Operating Systems • IT Networks and Security • System Developmet Methods and Practices.</p>
+            <div lang="en">
+                <h3 class="text-secondary">Education</h3>
+                <h4>Bachelor's Degree in Software Development <br> Erhvervsakademi Aarhus <br> Aarhus, Denmark - 2019</h4>
+                <p>Courses completed: • Databases for Developers • Machine Learning and Optimization • Development of Large Systems • System Integration • Test Driven Development • Android Development.</p>
+                <h4>Academy Profession Degree in Computer Science <br> Erhvervsakademi Sydvest <br> Esbjerg, Denmark - 2018</h4>
+                <p>Courses completed: • IT System Construction • IT System Development • Databases • Operating Systems • IT Networks and Security • System Developmet Methods and Practices.</p>
+            </div>
+            <div lang="hu" hidden>
+                <h3 class="text-secondary">Tanulmányok</h3>
+                <h4>Szoftverfejlesztő Alapképzés <br> Erhvervsakademi Aarhus <br> Aarhus, Dánia - 2019</h4>
+                <p>Teljesített tárgyak: • Adatbázisok Fejlesztőknek • Gépi Tanulás és Optimizáció • Nagy Rendszerek Fejlesztése • Rendszer Integráció • Tesztvezérelt Fejlesztés • Android Fejlesztés</p>
+                <h4>Számítógép-Tudomány Akadámiai Képzés <br> Erhvervsakademi Sydvest <br> Esbjerg, Dánia - 2018</h4>
+                <p>Teljesített tárgyak: • IT Rendszer Tervezés • IT rendszer Fejlesztés • Adatbázisok • Operációs Rendszerek • Hálózaok és IT Biztonság • Rendszerfejlesztési metódusok</p>
+            </div>
         </section>
 
         <section id="work" class="box-container">
-            <h3 class="text-secondary">Work</h3>
-            <h4>Part-time web and mobile developer at Roninn Creations in 2019</h4>
-            <p>Development of an Android application with Java as well as the corresponding back-end server using NodeJs and MongoDB database.</p>
-            <h4>Web development intern and later part-time full-stack developer at Waigo s.r.o. from 2017 to 2019</h4>
-            <p>Development of a web application and its RESTful back-end server. ASP.NET framework, Microsoft SQL Server database and Azure web services were used.</p>
+            <div lang="en">
+                <h3 class="text-secondary">Work</h3>
+                <h4>Part-time web and mobile developer <br> Roninn Creations, 2019</h4>
+                <p>Development of an Android mobile- and a web application as well as a corresponding RESTful back-end server. <br> Java, React.js, Node.js and MongoDB were used.</p>
+                <h4>Web development intern then part-time full stack developer <br> WAIGO, 2017 - 2020</h4>
+                <p>Development of a web- and a cross-platform mobile application as well as a corresponding RESTful back-end server. <br> ASP.NET, Xamarin, Microsoft SQL Server and Azure were used.</p>
+            </div>
+            <div lang="hu" hidden>
+                <h3 class="text-secondary">Munka</h3>
+                <h4>Részmunkaidős web és mobil fejlesztő <br> Roninn Creations, 2019</h4>
+                <p>Egy Android mobil- és egy webalkalmazás valamint egy hozzá tartozó REST back-end szerver fejlesztése. <br> Java, React.js, Node.js és MongoDB használatával.</p>
+                <h4>Webfejlesztő majd részmunkaidős full stack fejlesztő <br> WAIGO, 2017 - 2020</h4>
+                <p>Egy web- és egy cross-platform mobil alkalmazás valamint egy hozzá tartozó REST back-end szerver fejlesztése. <br> ASP.NET, Xamarin, Microsoft SQL Server és Azure használatával.</p>
+            </div>
         </section>
 
         <section id="projects" class="box-container">
-            <h3 class="text-secondary">Projects</h3>
-            <div class="grid-container">
-                <div class="grid-element">
-                    <h4>TheProject</h4>
-                    <p>An Android- and web application for rating hospitality units (such as hotels, bars etc.) from employee point of view.</p>
-                    <a href="https://github.com/dantarsoly/theprojectandroid" target="_blank" rel="noopener noreferrer">
-                        Android GitHub page
-                    </a>
-                    <br>
-                    <a href="https://github.com/dantarsoly/theprojectweb" target="_blank" rel="noopener noreferrer">
-                        Webapp Github page
-                    </a>
-                    <br>
-                    <a href="https://github.com/dantarsoly/theprojectapi" target="_blank" rel="noopener noreferrer">
-                        API Github page
-                    </a>
+            <div lang="en">
+                <h3 class="text-secondary">Projects</h3>
+                <div class="grid-container">
+                    <div class="grid-element">
+                        <h4>TheProject</h4>
+                        <p>An Android- and web application for rating hospitality units from employee point of view.</p>
+                        <a href="https://github.com/dantarsoly/theprojectandroid" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M10,0A10.126,10.126,0,0,0,0,10.253,10.226,10.226,0,0,0,6.837,19.98c.5.09.688-.218.688-.487,0-.244-.012-1.051-.012-1.91-2.513.474-3.163-.628-3.363-1.2a3.727,3.727,0,0,0-1.025-1.448c-.35-.192-.85-.666-.012-.679A2,2,0,0,1,4.65,15.3a2.108,2.108,0,0,0,2.912.846A2.177,2.177,0,0,1,8.2,14.777c-2.225-.256-4.55-1.141-4.55-5.062A4.047,4.047,0,0,1,4.675,6.959a3.771,3.771,0,0,1,.1-2.717s.838-.269,2.75,1.051a9.2,9.2,0,0,1,5,0c1.912-1.333,2.75-1.051,2.75-1.051a3.771,3.771,0,0,1,.1,2.717A4.023,4.023,0,0,1,16.4,9.715c0,3.935-2.337,4.806-4.562,5.062a2.461,2.461,0,0,1,.675,1.9c0,1.371-.013,2.474-.013,2.82,0,.269.188.59.688.487A10.252,10.252,0,0,0,20,10.253,10.126,10.126,0,0,0,10,0Z"/></svg>
+                            <span class="colorize">Android GitHub page</span>
+                        </a>
+                        <br>
+                        <a href="https://github.com/dantarsoly/theprojectweb" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M10,0A10.126,10.126,0,0,0,0,10.253,10.226,10.226,0,0,0,6.837,19.98c.5.09.688-.218.688-.487,0-.244-.012-1.051-.012-1.91-2.513.474-3.163-.628-3.363-1.2a3.727,3.727,0,0,0-1.025-1.448c-.35-.192-.85-.666-.012-.679A2,2,0,0,1,4.65,15.3a2.108,2.108,0,0,0,2.912.846A2.177,2.177,0,0,1,8.2,14.777c-2.225-.256-4.55-1.141-4.55-5.062A4.047,4.047,0,0,1,4.675,6.959a3.771,3.771,0,0,1,.1-2.717s.838-.269,2.75,1.051a9.2,9.2,0,0,1,5,0c1.912-1.333,2.75-1.051,2.75-1.051a3.771,3.771,0,0,1,.1,2.717A4.023,4.023,0,0,1,16.4,9.715c0,3.935-2.337,4.806-4.562,5.062a2.461,2.461,0,0,1,.675,1.9c0,1.371-.013,2.474-.013,2.82,0,.269.188.59.688.487A10.252,10.252,0,0,0,20,10.253,10.126,10.126,0,0,0,10,0Z"/></svg>
+                            <span class="colorize">Webapp GitHub pag</span>e
+                        </a>
+                        <br>
+                        <a href="https://github.com/dantarsoly/theprojectapi" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M10,0A10.126,10.126,0,0,0,0,10.253,10.226,10.226,0,0,0,6.837,19.98c.5.09.688-.218.688-.487,0-.244-.012-1.051-.012-1.91-2.513.474-3.163-.628-3.363-1.2a3.727,3.727,0,0,0-1.025-1.448c-.35-.192-.85-.666-.012-.679A2,2,0,0,1,4.65,15.3a2.108,2.108,0,0,0,2.912.846A2.177,2.177,0,0,1,8.2,14.777c-2.225-.256-4.55-1.141-4.55-5.062A4.047,4.047,0,0,1,4.675,6.959a3.771,3.771,0,0,1,.1-2.717s.838-.269,2.75,1.051a9.2,9.2,0,0,1,5,0c1.912-1.333,2.75-1.051,2.75-1.051a3.771,3.771,0,0,1,.1,2.717A4.023,4.023,0,0,1,16.4,9.715c0,3.935-2.337,4.806-4.562,5.062a2.461,2.461,0,0,1,.675,1.9c0,1.371-.013,2.474-.013,2.82,0,.269.188.59.688.487A10.252,10.252,0,0,0,20,10.253,10.126,10.126,0,0,0,10,0Z"/></svg>
+                            <span class="colorize">API GitHub page</span>
+                        </a>
+                    </div>
+                    <div class="grid-element">
+                        <h4>Grab A Duck</h4>
+                        <p>A computer game where two or four players can play against each other to collect rubber duck in a bath tub.</p>
+                        <a href="https://github.com/dantarsoly/grabaduck" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M10,0A10.126,10.126,0,0,0,0,10.253,10.226,10.226,0,0,0,6.837,19.98c.5.09.688-.218.688-.487,0-.244-.012-1.051-.012-1.91-2.513.474-3.163-.628-3.363-1.2a3.727,3.727,0,0,0-1.025-1.448c-.35-.192-.85-.666-.012-.679A2,2,0,0,1,4.65,15.3a2.108,2.108,0,0,0,2.912.846A2.177,2.177,0,0,1,8.2,14.777c-2.225-.256-4.55-1.141-4.55-5.062A4.047,4.047,0,0,1,4.675,6.959a3.771,3.771,0,0,1,.1-2.717s.838-.269,2.75,1.051a9.2,9.2,0,0,1,5,0c1.912-1.333,2.75-1.051,2.75-1.051a3.771,3.771,0,0,1,.1,2.717A4.023,4.023,0,0,1,16.4,9.715c0,3.935-2.337,4.806-4.562,5.062a2.461,2.461,0,0,1,.675,1.9c0,1.371-.013,2.474-.013,2.82,0,.269.188.59.688.487A10.252,10.252,0,0,0,20,10.253,10.126,10.126,0,0,0,10,0Z"/></svg>
+                            <span class="colorize">GitHub page</span>
+                        </a>
+                    </div>
+                    <div class="grid-element">
+                        <h4>NeverSnoozeAgain</h4>
+                        <p>A alarm clock application for Android that will donate to a charity organization in your name if you do not deactivate it in time.</p>
+                        <a href="https://github.com/shekaij/hackathonalarm" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M10,0A10.126,10.126,0,0,0,0,10.253,10.226,10.226,0,0,0,6.837,19.98c.5.09.688-.218.688-.487,0-.244-.012-1.051-.012-1.91-2.513.474-3.163-.628-3.363-1.2a3.727,3.727,0,0,0-1.025-1.448c-.35-.192-.85-.666-.012-.679A2,2,0,0,1,4.65,15.3a2.108,2.108,0,0,0,2.912.846A2.177,2.177,0,0,1,8.2,14.777c-2.225-.256-4.55-1.141-4.55-5.062A4.047,4.047,0,0,1,4.675,6.959a3.771,3.771,0,0,1,.1-2.717s.838-.269,2.75,1.051a9.2,9.2,0,0,1,5,0c1.912-1.333,2.75-1.051,2.75-1.051a3.771,3.771,0,0,1,.1,2.717A4.023,4.023,0,0,1,16.4,9.715c0,3.935-2.337,4.806-4.562,5.062a2.461,2.461,0,0,1,.675,1.9c0,1.371-.013,2.474-.013,2.82,0,.269.188.59.688.487A10.252,10.252,0,0,0,20,10.253,10.126,10.126,0,0,0,10,0Z"/></svg>
+                            <span class="colorize">GitHub page</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="grid-element">
-                    <h4>Grab A Duck</h4>
-                    <p>A computer game where two or four players can play against each other to collect rubber duck in a bath tub.</p>
-                    <a href="https://github.com/dantarsoly/grabaduck" target="_blank" rel="noopener noreferrer">
-                        GitHub Page
-                    </a>
-                </div>
-                <div class="grid-element">
-                    <h4>NeverSnoozeAgain</h4>
-                    <p>A alarm clock application for Android that will donate to a charity in your name if you do not deactivate it in time.</p>
-                    <a href="https://github.com/shekaij/hackathonalarm" target="_blank" rel="noopener noreferrer">
-                        GitHub Page
-                    </a>
+            </div>
+            <div lang="hu" hidden>
+                <h3 class="text-secondary">Projektek</h3>
+                <div class="grid-container">
+                    <div class="grid-element">
+                        <h4>AProjekt</h4>
+                        <p>Egy Android- és webalkalmazás vendéglátó egységek értékelésére az alkalmazottak szemszögéből.</p>
+                        <a href="https://github.com/dantarsoly/theprojectandroid" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M10,0A10.126,10.126,0,0,0,0,10.253,10.226,10.226,0,0,0,6.837,19.98c.5.09.688-.218.688-.487,0-.244-.012-1.051-.012-1.91-2.513.474-3.163-.628-3.363-1.2a3.727,3.727,0,0,0-1.025-1.448c-.35-.192-.85-.666-.012-.679A2,2,0,0,1,4.65,15.3a2.108,2.108,0,0,0,2.912.846A2.177,2.177,0,0,1,8.2,14.777c-2.225-.256-4.55-1.141-4.55-5.062A4.047,4.047,0,0,1,4.675,6.959a3.771,3.771,0,0,1,.1-2.717s.838-.269,2.75,1.051a9.2,9.2,0,0,1,5,0c1.912-1.333,2.75-1.051,2.75-1.051a3.771,3.771,0,0,1,.1,2.717A4.023,4.023,0,0,1,16.4,9.715c0,3.935-2.337,4.806-4.562,5.062a2.461,2.461,0,0,1,.675,1.9c0,1.371-.013,2.474-.013,2.82,0,.269.188.59.688.487A10.252,10.252,0,0,0,20,10.253,10.126,10.126,0,0,0,10,0Z"/></svg>
+                            <span class="colorize">Android GitHub oldal</span>
+                        </a>
+                        <br>
+                        <a href="https://github.com/dantarsoly/theprojectweb" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M10,0A10.126,10.126,0,0,0,0,10.253,10.226,10.226,0,0,0,6.837,19.98c.5.09.688-.218.688-.487,0-.244-.012-1.051-.012-1.91-2.513.474-3.163-.628-3.363-1.2a3.727,3.727,0,0,0-1.025-1.448c-.35-.192-.85-.666-.012-.679A2,2,0,0,1,4.65,15.3a2.108,2.108,0,0,0,2.912.846A2.177,2.177,0,0,1,8.2,14.777c-2.225-.256-4.55-1.141-4.55-5.062A4.047,4.047,0,0,1,4.675,6.959a3.771,3.771,0,0,1,.1-2.717s.838-.269,2.75,1.051a9.2,9.2,0,0,1,5,0c1.912-1.333,2.75-1.051,2.75-1.051a3.771,3.771,0,0,1,.1,2.717A4.023,4.023,0,0,1,16.4,9.715c0,3.935-2.337,4.806-4.562,5.062a2.461,2.461,0,0,1,.675,1.9c0,1.371-.013,2.474-.013,2.82,0,.269.188.59.688.487A10.252,10.252,0,0,0,20,10.253,10.126,10.126,0,0,0,10,0Z"/></svg>
+                            <span class="colorize">Webapp GitHub oldal</span>
+                        </a>
+                        <br>
+                        <a href="https://github.com/dantarsoly/theprojectapi" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M10,0A10.126,10.126,0,0,0,0,10.253,10.226,10.226,0,0,0,6.837,19.98c.5.09.688-.218.688-.487,0-.244-.012-1.051-.012-1.91-2.513.474-3.163-.628-3.363-1.2a3.727,3.727,0,0,0-1.025-1.448c-.35-.192-.85-.666-.012-.679A2,2,0,0,1,4.65,15.3a2.108,2.108,0,0,0,2.912.846A2.177,2.177,0,0,1,8.2,14.777c-2.225-.256-4.55-1.141-4.55-5.062A4.047,4.047,0,0,1,4.675,6.959a3.771,3.771,0,0,1,.1-2.717s.838-.269,2.75,1.051a9.2,9.2,0,0,1,5,0c1.912-1.333,2.75-1.051,2.75-1.051a3.771,3.771,0,0,1,.1,2.717A4.023,4.023,0,0,1,16.4,9.715c0,3.935-2.337,4.806-4.562,5.062a2.461,2.461,0,0,1,.675,1.9c0,1.371-.013,2.474-.013,2.82,0,.269.188.59.688.487A10.252,10.252,0,0,0,20,10.253,10.126,10.126,0,0,0,10,0Z"/></svg>
+                            <span class="colorize">API GitHub oldal</span>
+                        </a>
+                    </div>
+                    <div class="grid-element">
+                        <h4>Ragadj meg egy Kacsát</h4>
+                        <p>Egy számítógépes játék, ahol kettő vagy négy játékos játszhat egymás ellen, hogy gumikacsákat gyűjtsenek egy fürdőkádban.</p>
+                        <a href="https://github.com/dantarsoly/grabaduck" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M10,0A10.126,10.126,0,0,0,0,10.253,10.226,10.226,0,0,0,6.837,19.98c.5.09.688-.218.688-.487,0-.244-.012-1.051-.012-1.91-2.513.474-3.163-.628-3.363-1.2a3.727,3.727,0,0,0-1.025-1.448c-.35-.192-.85-.666-.012-.679A2,2,0,0,1,4.65,15.3a2.108,2.108,0,0,0,2.912.846A2.177,2.177,0,0,1,8.2,14.777c-2.225-.256-4.55-1.141-4.55-5.062A4.047,4.047,0,0,1,4.675,6.959a3.771,3.771,0,0,1,.1-2.717s.838-.269,2.75,1.051a9.2,9.2,0,0,1,5,0c1.912-1.333,2.75-1.051,2.75-1.051a3.771,3.771,0,0,1,.1,2.717A4.023,4.023,0,0,1,16.4,9.715c0,3.935-2.337,4.806-4.562,5.062a2.461,2.461,0,0,1,.675,1.9c0,1.371-.013,2.474-.013,2.82,0,.269.188.59.688.487A10.252,10.252,0,0,0,20,10.253,10.126,10.126,0,0,0,10,0Z"/></svg>
+                            <span class="colorize">GitHub oldal</span>
+                        </a>
+                    </div>
+                    <div class="grid-element">
+                        <h4>SohaTöbbéSzundi</h4>
+                        <p>Egy ébresztő alkalmazás Androidra amely adományozni fog egy jótékonysági szervezetnek a nevedben ha nem hatástalanítod időben.</p>
+                        <a href="https://github.com/shekaij/hackathonalarm" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="a" d="M10,0A10.126,10.126,0,0,0,0,10.253,10.226,10.226,0,0,0,6.837,19.98c.5.09.688-.218.688-.487,0-.244-.012-1.051-.012-1.91-2.513.474-3.163-.628-3.363-1.2a3.727,3.727,0,0,0-1.025-1.448c-.35-.192-.85-.666-.012-.679A2,2,0,0,1,4.65,15.3a2.108,2.108,0,0,0,2.912.846A2.177,2.177,0,0,1,8.2,14.777c-2.225-.256-4.55-1.141-4.55-5.062A4.047,4.047,0,0,1,4.675,6.959a3.771,3.771,0,0,1,.1-2.717s.838-.269,2.75,1.051a9.2,9.2,0,0,1,5,0c1.912-1.333,2.75-1.051,2.75-1.051a3.771,3.771,0,0,1,.1,2.717A4.023,4.023,0,0,1,16.4,9.715c0,3.935-2.337,4.806-4.562,5.062a2.461,2.461,0,0,1,.675,1.9c0,1.371-.013,2.474-.013,2.82,0,.269.188.59.688.487A10.252,10.252,0,0,0,20,10.253,10.126,10.126,0,0,0,10,0Z"/></svg>
+                            <span class="colorize">GitHub oldal</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

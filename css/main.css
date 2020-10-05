@@ -14,6 +14,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+  body .colored {
+    color: #3b73b4; }
   body .flag-btn {
     position: absolute;
     top: 10px;
@@ -47,10 +49,7 @@ header {
       header .link-container a svg {
         width: 28px;
         height: 28px;
-        fill: #e8e8e8;
         margin-right: 5px; }
-      header .link-container a i {
-        font-style: normal; }
 
 main {
   z-index: 1;
@@ -75,8 +74,6 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr); }
-  main .colored {
-    color: #3b73b4; }
   main .lg-heading {
     font-size: 4.5rem;
     margin-bottom: 1rem; }
@@ -99,18 +96,23 @@ footer {
 h1,
 h2,
 h3 {
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 2; }
 
 a {
-  color: #e8e8e8;
+  color: white;
+  fill: white;
   text-decoration: none;
   outline: none; }
-  a:hover {
+  a:hover .colorize {
     color: #3b73b4;
     transition: all 0.2s ease-out; }
-    a:hover path {
-      fill: #3b73b4;
-      transition: all 0.2s ease-out; }
+  a:hover .capitalize {
+    text-transform: uppercase;
+    transition: all 0.2s ease-out; }
+  a:hover path {
+    fill: #3b73b4;
+    transition: all 0.2s ease-out; }
   a:focus {
     color: #3b73b4;
     transition: all 0.2s ease-out; }
@@ -151,7 +153,8 @@ ul {
       flex-direction: column;
       justify-content: space-around; }
       header .link-container a svg {
-        width: 24px; }
+        width: 24px;
+        height: 24px; }
   main {
     min-height: calc(100vh - 40px - 240px);
     margin-left: 0;

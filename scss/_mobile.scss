@@ -31,10 +31,8 @@
       flex-direction: column;
       justify-content: space-around;
 
-      a {
-        .icon {
-          width: 25px;
-        }
+      a svg {
+        width: $small-icon-size;
       }
     }
   }

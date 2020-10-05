@@ -48,6 +48,7 @@ header {
   .link-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     overflow: hidden;
     white-space: nowrap;
 
@@ -58,10 +59,11 @@ header {
         width: $icon-size;
         height: $icon-size;
         fill: get-text-color(rgba($primary-color, $header-opacity));
+        margin-right: 5px;
       }
 
       i {
-        margin-left: 5px;
+        // margin-left: 5px;
         font-style: normal;
       }
     }

@@ -1,9 +1,9 @@
-const enIcon = '../content/icons/uk_flag.png';
-const huIcon = '../content/icons/hu_flag.png';
+const enIcon = '../content/icons/gb_flag.svg';
+const huIcon = '../content/icons/hu_flag.svg';
 const buttons = document.getElementsByTagName('button');
 const links = document.getElementsByTagName('a');
 const langBtn = document.getElementById('lang-btn');
-const flagImg = document.getElementById('flag-img');
+const flagImg = document.getElementById('lang-img');
 const supportedLan = ['en', 'hu'];
 
 // Clears the focus after a link or button was clicked or touched

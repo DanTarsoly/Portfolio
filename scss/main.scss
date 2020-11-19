@@ -2,6 +2,10 @@
 
 * {
   box-sizing: border-box;
+  background: rgba(0,0,0,0);
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
@@ -13,6 +17,24 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  .colored{
+    color: $secondary-color;
+  }
+
+  .flag-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    line-height: 0;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+
+    .flag-img {
+      border-radius: 50%;
+    }
+  }
 }
 
 header {
@@ -23,22 +45,31 @@ header {
   background: rgba($primary-color, $header-opacity);
   color: get-text-color(rgba($primary-color, $header-opacity));
   overflow: hidden;
-  padding: 25px;
+  padding: ($header-size - $portrait-size) / 2;
 
   .portrait {
     width: $portrait-size;
+    background: $secondary-color;
+    padding: 3px;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
   }
 
   .link-container {
     display: flex;
     flex-direction: column;
-    padding: 10px 0 10px 0;
-  }
+    align-items: flex-start;
+    overflow: hidden;
+    white-space: nowrap;
 
-  a {
-    padding: 5px;
+    a {
+      margin: 1px 0;
+
+      svg {
+        width: $icon-size;
+        height: $icon-size;
+        margin-right: 5px;
+      }
+    }
   }
 }
 
@@ -74,12 +105,9 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .text-secondary {
-    color: $secondary-color;
-  }
-
   .lg-heading {
     font-size: 4.5rem;
+    margin-bottom: 1rem;
   }
 
   .sm-heading {
@@ -98,27 +126,74 @@ footer {
   padding: 1rem;
   background: $primary-color;
   color: $secondary-color;
+  line-height: 1;
 }
 
 h1,
 h2,
 h3 {
-  margin: 0;
   font-weight: 400;
+  line-height: 2;
+}
+
+h4 {
+  padding-top: 1rem;
+}
+
+p {
+  padding-top: 0.5rem;
 }
 
 a {
-  color: get-text-color($primary-color);
-  text-decoration: none;
+  color: white;
+  fill: white;
+  text-decoration: none;  
+  outline:none;
 
   &:hover {
+    .colorize {
+      color: $secondary-color;
+      @include easeOut();
+    }
+
+    .capitalize {
+      text-transform: uppercase;
+      @include easeOut();
+    }
+    
+    path {
+      fill: $secondary-color;
+      @include easeOut();
+    };
+  }
+
+  &:focus {
     color: $secondary-color;
+
+    path {
+      fill: $secondary-color;
+      @include easeOut();
+    };
     @include easeOut();
   }
 }
 
+button {
+  background: get-text-color($primary-color);
+  outline:none;
+
+  &:hover {
+    background-color: $secondary-color;
+    @include easeOut();
+  }
+
+  &:focus {
+    @include easeOut();
+    background-color: $secondary-color;
+  }
+}
+
 ul {
-  padding: 0;
   list-style: none;
 }
 
